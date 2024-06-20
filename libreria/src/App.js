@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/header/Header"
+import AboutMe from "./components/body/aboutMe/AboutMe"
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="snapscroll-container">
+        <AboutMe />
+        <AboutMe />
+        <AboutMe />
+      </div>
     </div>
   );
 }
