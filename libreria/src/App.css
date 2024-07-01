@@ -1,5 +1,5 @@
 h1, h2, p {
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
   font: Arial, sans-serif;
 }
 
@@ -15,6 +15,11 @@ p {
   font-size: 4vh;
 }
 
+mark {
+  color: rgb(20, 20, 20);
+  background-color: rgb(250, 235, 215);
+}
+
 .snapscroll-container {
   width: 100%;
   height: 100vh;
@@ -28,6 +33,76 @@ p {
   display: flex;
   scroll-snap-align: start;
 }
+
+.slider-from-left {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.slide-in-from-left {
+  animation: slide-in-from-left 0.5s forwards;
+  -webkit-animation: slide-in-from-left 0.5s forwards;
+}
+
+.slide-out-from-left {
+  animation: slide-out-from-left 0.5s forwards;
+  -webkit-animation: slide-out-from-left 0.5s forwards;
+}
+  
+@keyframes slide-in-from-left {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in-from-left {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out-from-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out-from-left {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
+.slider-from-right {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+
+.slide-in-from-right {
+  animation: slide-in-from-right 0.5s forwards;
+  -webkit-animation: slide-in-from-right 0.5s forwards;
+}
+
+.slide-out-from-right {
+  animation: slide-out-from-right 0.5s forwards;
+  -webkit-animation: slide-out-from-right 0.5s forwards;
+}
+  
+@keyframes slide-in-from-right {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in-from-right {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out-from-right {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+@-webkit-keyframes slide-out-from-right {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(100%); }
+}
+
+
+
+
 
 .App {
   text-align: center;

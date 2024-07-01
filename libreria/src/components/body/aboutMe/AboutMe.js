@@ -6,9 +6,9 @@ export default function AboutMe() {
         <div className="scrollable-wrapper upper-gradient">
             <div className="half_screen">
                 <div className="centered-text">
-                    <p>Hello!</p>
-                    <h1>My name is Davide</h1>
-                    <h2>I'm a full-stack developer and computer vision specialist</h2> 
+                    <p className="slider-from-left slide-in-from-left">Hello!</p>
+                    <h1 className="slider-from-right slide-in-from-right">My name is <mark>Davide</mark></h1>
+                    <h2 className="slider-from-left slide-in-from-left">I'm a <mark>full-stack developer</mark> and <mark>computer vision specialist</mark></h2> 
                 </div>
             </div>
             <div className="half_screen">
