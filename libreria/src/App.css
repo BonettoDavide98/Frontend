@@ -1,8 +1,32 @@
+h1, h2, p {
+  color: antiquewhite;
+  font: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 7vh;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+p {
+  font-size: 4vh;
+}
+
 .snapscroll-container {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+}
+
+.snapscroll-container .scrollable-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
 }
 
 .App {
