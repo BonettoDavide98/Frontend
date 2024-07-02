@@ -1,6 +1,6 @@
 import './AboutMe.css';
 
-export default function AboutMe({currentPage}) {
+export default function AboutMe({currentPage, device}) {
     return (
         <div className="scrollable-wrapper second-gradient">
             <div>
@@ -17,12 +17,12 @@ export default function AboutMe({currentPage}) {
                         <div id="Skills" className="close-lines">
                             <h2>Skills</h2>
                             <h3><mark>Daily</mark> use</h3>
-                            <p>MVC, OOP, Git, Agile Programming(Scrum), .NET, C#, Javascript, SQL, Computer vision software (Cognex, Halcon, Dalsa), Deep learning software (PyTorch, YOLO, Cognex)</p>
+                            <p>MVC, OOP, Git, Docker, Agile Programming(Scrum), .NET, C#, Javascript, SQL, Computer vision software (Cognex, Halcon, Dalsa), Deep learning software (PyTorch, YOLO, Cognex)</p>
                             <p>Programmable Cameras (Dalsa, Cognex), Industrial illuminators</p>
                             <h3><mark>Frequent</mark> use</h3>
                             <p>NodeJS, ReactJS, ASP.NET, C, Python, RESTful APIs, HTML, CSS, PLC Programming (Allen-Bradley, Siemens, Omron)</p>
                             <h3><mark>Occasional</mark> use</h3>
-                            <p>Java, C++</p>
+                            <p>Java, C++, VB</p>
                         </div>
                     </div>
                     <div className={currentPage.number == 2 ? "half-screen justified-text slider-from-right slide-in-from-right" : "half-screen justified-text slide-out-from-right"}>

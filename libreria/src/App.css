@@ -4,19 +4,19 @@ h1, h2, h3, p, ul {
 }
 
 h1 {
-  font-size: 5vh;
+  font-size: calc(25px + 6vh);
 }
 
 h2 {
-  font-size: 4vh;
+  font-size: calc(18px + 3vh);
 }
 
 h3 {
-  font-size: 3vh;
+  font-size: calc(12px + 2vh);
 }
 
 p, ul {
-  font-size: 2.5vh;
+  font-size:  calc(10px + 1.5vh);
 }
 
 mark {

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import './App.css';
 import Intro from "./components/body/Intro/Intro"
 import AboutMe from "./components/body/AboutMe/AboutMe"
@@ -6,6 +7,9 @@ import AboutMe from "./components/body/AboutMe/AboutMe"
 function App() {
   const numPages = 2;
   const [activePage, setActivePage] = useState(1);
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 900px)'
+  })
 
   const handleScroll = (event) => {
     const { scrollTop, scrollHeight, clientHeight } = event.target;
@@ -19,8 +23,8 @@ function App() {
   return (
     <div className="App">
       <div className="snapscroll-container"  onScroll={handleScroll}>
-        <Intro currentPage={{ number: activePage }}/>
-        <AboutMe currentPage={{ number: activePage }}/>
+        <Intro currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop}}/>
+        <AboutMe currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop}}/>
       </div>
     </div>
   );
