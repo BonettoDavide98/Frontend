@@ -14,7 +14,6 @@ function App() {
       setActivePage(1);
     else
       setActivePage(Math.ceil(scrollRatio * numPages));
-    console.log(activePage);
   };
 
   return (

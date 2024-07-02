@@ -1,23 +1,72 @@
-h1, h2, p {
+h1, h2, h3, p, ul {
   color: rgb(250, 235, 215);
   font: Arial, sans-serif;
 }
 
 h1 {
-  font-size: 7vh;
-}
-
-h2 {
   font-size: 5vh;
 }
 
-p {
+h2 {
   font-size: 4vh;
+}
+
+h3 {
+  font-size: 3vh;
+}
+
+p, ul {
+  font-size: 2.5vh;
 }
 
 mark {
   color: rgb(20, 20, 20);
   background-color: rgb(250, 235, 215);
+}
+
+img {
+  max-height: 100vh;
+}
+
+.centered-text {
+  padding: 25vh 10vh;
+  text-align: left;
+}
+
+.justified-text {
+  padding: 5vh 5vh;
+  text-align: left;
+}
+
+.text-link {
+  font-size: 3vh;
+  color: rgb(250,235,215);
+  float: right;
+  padding-right: 20px;
+  transition: transform .2s;
+}
+
+.text-link:hover {
+  transform: scale(1.2);
+}
+
+.half_screen {
+  width: 50vw;
+  height: 100%;
+}
+
+.white-half {
+  background-image: linear-gradient(0, rgb(250, 235, 215), rgb(250, 250, 245));
+}
+
+.white-half * h1, .white-half * h2, .white-half * h3, .white-half * p, .white-half * ul {
+  color: rgb(20, 20, 20);
+  font: Arial, sans-serif;
+}
+
+.white-half * mark {
+  color: rgb(250, 235, 215);
+  background-color: rgb(20, 20, 20);
 }
 
 .snapscroll-container {
@@ -64,7 +113,7 @@ mark {
 
 @-webkit-keyframes slide-out-from-left {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(-100%); }
+  100% { -webkit-transform: translateX(-100%);}
 }
 
 .slider-from-right {
@@ -92,53 +141,10 @@ mark {
   
 @keyframes slide-out-from-right {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(250%); }
+  100% { transform: translateX(100%); }
 }
 
 @-webkit-keyframes slide-out-from-right {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(250%); }
-}
-
-
-
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  100% { -webkit-transform: translateX(100%); }
 }
