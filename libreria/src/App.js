@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import './App.css';
-import Intro from "./components/body/Intro/Intro"
-import AboutMe from "./components/body/AboutMe/AboutMe"
+import Intro from "./components/body/Intro/Intro";
+import AboutMe from "./components/body/AboutMe/AboutMe";
+import Samples from "./components/body/Samples/Samples";
 
 function App() {
-  const numPages = 2;
+  const numPages = 3;
   const [activePage, setActivePage] = useState(1);
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 900px)'
@@ -23,8 +24,9 @@ function App() {
   return (
     <div className="App">
       <div className="snapscroll-container"  onScroll={handleScroll}>
-        <Intro currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop}}/>
-        <AboutMe currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop}}/>
+        <Intro currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop }}/>
+        <AboutMe currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop }}/>
+        <Samples currentPage={{ number: activePage }} device={{ isDesktop: isDesktopOrLaptop }}/>
       </div>
     </div>
   );

@@ -12,15 +12,15 @@ export default function AboutMe({currentPage, device}) {
                             <p><i><mark>GPA 4.0</mark></i></p>
                             <p><i>Thesis title: Application of Machine Learning to Functional Languages</i></p>
                             <h3>Cambridge English Advanced <mark>(CAE)</mark></h3>
-                            <p><i>Passed with honours, <mark>proficency level C2</mark></i></p>
+                            <p><i>Passed with honours, proficency level <mark>C2</mark></i></p>
                         </div>
                         <div id="Skills" className="close-lines">
                             <h2>Skills</h2>
                             <h3><mark>Daily</mark> use</h3>
-                            <p>MVC, OOP, Git, Docker, Agile Programming(Scrum), .NET, C#, Javascript, SQL, Computer vision software (Cognex, Halcon, Dalsa), Deep learning software (PyTorch, YOLO, Cognex)</p>
-                            <p>Programmable Cameras (Dalsa, Cognex), Industrial illuminators</p>
+                            <p>MVC, OOP, Git, Docker, Agile Programming (<i>Scrum</i>), .NET, C#, Javascript, SQL, Computer vision software (<i>Cognex, Halcon, Dalsa</i>), Deep learning frameworks (<i>PyTorch, YOLO, Cognex</i>)</p>
+                            <p>Programmable Cameras (<i>Dalsa, Cognex</i>), Industrial illuminators</p>
                             <h3><mark>Frequent</mark> use</h3>
-                            <p>NodeJS, ReactJS, ASP.NET, C, Python, RESTful APIs, HTML, CSS, PLC Programming (Allen-Bradley, Siemens, Omron)</p>
+                            <p>NodeJS, ReactJS, ASP.NET, C, Python, RESTful APIs, HTML, CSS, PLC Programming (<i>Allen-Bradley, Siemens, Omron</i>), OpenCV</p>
                             <h3><mark>Occasional</mark> use</h3>
                             <p>Java, C++, VB</p>
                         </div>
@@ -35,7 +35,7 @@ export default function AboutMe({currentPage, device}) {
                                 <li>A client requests a <mark>feasability test</mark> for a feature they wish to implement on their industrial line and sends samples to our office.</li>
                                 <li>I try and design a computer vision solution by testing various <mark>illuminators, configurations, camera types and virtual imaging methods</mark>.</li>
                                 <li>I then write a <mark>report</mark>, detailing my findings and deciding if the feature requested is feasible or not, and develop (if possible) a <mark>prototype</mark> of the system.</li>
-                                <li>If the client decides to acquire the system, I complete the development of the prototype and develop a <mark>custom application, meaning UI, UX, camera governing concurrent threads, internal algorithms, dedicated SQL server or RESTful API, PLC communications, etc.</mark></li>
+                                <li>If the client decides to acquire the system, I complete the development of the prototype and develop a <mark>custom application</mark>, meaning <mark>UI, UX, camera governing concurrent threads, internal algorithms, dedicated SQL server or RESTful API, PLC communications, etc.</mark></li>
                                 <li>In the meantime I order and assemble the industrial PC that will contain my application and that will be installed in the industrial line.</li>
                                 <li>Once the mechanical part of the line is complete I travel on site and oversee the installation and configuration of the PC, and then I remain on site to thoroughly live test the system.</li>
                                 <li>Once the line is tried and tested it usually gets taken apart and shipped abroad, and in those cases I travel along with it to oversee the reinstallation in its definitive location.</li>
